@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Adote</title>
+    <script src="scriptAnimais.js"></script>
+    <script src="scriptUsuarios.js"></script>
+</head>
+
+<body class="flex flex-col items-center justify-center">
+    <div class="text-3xl font-semibold text-center bg-slate-400 border-2 w-full border-black p-5">
+        Adoção
+    </div>
+    <div class="flex justify-between items-center space-x-10">
+        <div>
+            <div class="flex flex-col items-center">
+                <form class="flex flex-col max-w-xs mt-10" action="">
+                    <label for="">Nome</label>
+                    <input id="nome" type="text" class="border-2 border-black">
+                    <label for="">Descrição</label>
+                    <input id="descricao" name="" type="text" class="border-2 border-black">
+                    <button class="border-2 border-black mt-5" onclick="cadastrar()">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col items-center">
+                <form class="flex flex-col max-w-xs mt-10" action="">
+                    <label for="">Nome</label>
+                    <input id="nome" type="text" class="border-2 border-black">
+                    <label for="">Email</label>
+                    <input id="email" name="" type="text" class="border-2 border-black">
+                    <button class="border-2 border-black mt-5" onclick="cadastrarUsuario()">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col items-center">
+                <form class="flex flex-col max-w-xs mt-10" action="">
+                    <label for="">Nome Animal</label>
+                    <input id="nomeAnimal" type="text" class="border-2 border-black">
+                    <label for="">Nome Usuario</label>
+                    <input id="nomeUsuario" name="" type="text" class="border-2 border-black">
+                    <button class="border-2 border-black mt-5" onclick="cadastrarAdocao()">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between space-x-24">
+        <div>
+            <div class="flex flex-col items-center justify-center border-2 border-black p-5 mt-10 max-w-md">
+                <button onclick="listarAnimais()">Listar Animais</button>
+                <div id="lista-animais"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col items-center justify-center border-2 border-black p-5 mt-10 max-w-md">
+                <button onclick="listarUsuarios()">Listar Usuários</button>
+                <div id="lista-usuarios"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col items-center justify-center border-2 border-black p-5 mt-10 max-w-md">
+                <button onclick="listarAdocoes()">Listar Adocoes</button>
+                <div id="lista-adocoes"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
